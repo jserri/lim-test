@@ -32,6 +32,8 @@ header {
     height: 30%;
     display: flex;
     flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
 }
 
 header > .logo {
@@ -50,9 +52,14 @@ header > h2 {
     text-align: center;
     color: #00dd00;
     font-size:28px;
+    margin-bottom: 1rem;
 }
 
 /* Nav Section */
+
+header > nav {
+    background-color: #00dd00;
+}
 
 header > nav > ul {
     display: flex;
@@ -68,4 +75,90 @@ header > nav > ul > li {
 header > nav > ul > li > button > a, a:hover, a:focus, a:active {
     text-decoration: none;
     color: inherit;
+}
+
+/* Inizio Main Content */
+main {
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+    margin: 2rem auto;
+    width: 80%;
+
+}
+
+main p {
+    color: #fff;
+}
+
+main > .wrapper-section {
+    margin-top: 2rem;
+}
+
+main > .wrapper-section > .wrapper-header {
+    display: flex;
+    flex-direction: row;
+}
+
+main > .wrapper-section > .wrapper-header > h3 {
+    margin-left: 1rem;
+    color: #fff;
+}
+
+main > .wrapper-section > .wrapper-address {
+    display: flex;
+    flex-direction: row;
+}
+
+main > .wrapper-section > .wrapper-address > span::after{
+    content: "\21A6";
+    color: #fff;
+}
+
+main > .wrapper-section > .wrapper-address > p {
+    margin-left: 1rem;
+}
+
+main > .wrapper-section > .wrapper-status > .progress-border {
+    background-color: #f1f1f1;
+    height: 20px;
+    border-radius: 25px;
+    margin-top: 0.8rem;
+    width: 50%;
+}
+
+main > .wrapper-section > .wrapper-status > .progress-border > .progress-bar-1 {
+    width: 65%;
+    background-color: #ffc74f;
+    border-radius: 25px;
+    height: 100%;
+}
+
+main > .wrapper-section > .wrapper-status > .progress-border > .progress-bar-2 {
+    width: 100%;
+    background-color: #4dff5b;
+    border-radius: 25px;
+    height: 100%;
+}
+
+main > .wrapper-section > .wrapper-status > .progress-border > .progress-bar-3 {
+    width: 25%;
+    background-color: #f83838;
+    border-radius: 25px;
+    height: 100%;
+}
+
+main > .wrapper-section > .wrapper-status > .progress-border > .progress-bar-1::after {
+    content: "65%";
+    margin-left: 1.5rem;
+}
+
+main > .wrapper-section > .wrapper-status > .progress-border > .progress-bar-2::after {
+    content: "100%";
+    margin-left: 1.5rem;
+}
+
+main > .wrapper-section > .wrapper-status > .progress-border > .progress-bar-3::after {
+    content: "25%";
+    margin-left: 1.5rem;
 }
